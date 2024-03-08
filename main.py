@@ -99,3 +99,6 @@ def seletor(op):
             print('f: ', f)
             print('l: ', l)
             print('k: ', k)
+
+# Programa principal
+menu()
