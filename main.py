@@ -48,19 +48,19 @@ def seletor(op):
         print('3 - I  (Intensidade da onda eletromagnética)')
         print('=======================================')
         op = int(input('Opcao: '))
-        if op == 1:
+        if op == 1:  #teste correto
             Em = float(input('Informe o valor de Em: '))
             Bm = Em / c
             I = (Em ** 2) / (2 * u * c)
             print('Bm: {:.2e}'.format(Bm))
             print('I: {:.2e}'.format(I))
-        elif op == 2:
+        elif op == 2: #teste correto, mas lembrar de mudar as unidades de medida para cada caso
             Bm = float(input('Informe o valor de Bm: '))
             Em = Bm * c
             I = (Em ** 2) / (2 * u * c)
             print('Em: {:.2e}'.format(Em))
             print('I: {:.2e}'.format(I))
-        elif op == 3:
+        elif op == 3:  #teste correto
             I = float(input('Informe o valor de I: '))
             Em = (2 * c * I * u) ** 0.5
             Bm = Em / c
@@ -73,38 +73,38 @@ def seletor(op):
         print('4 - w (Frequencia Angular)')
         print('=======================================')
         op = int(input('Opcao: '))
-        if op == 1:
+        if op == 1: #teste correto
             f = float(input('Informe o valor de f: '))
             l = c / f
             k = 2 * pi / l
             w = 2 * pi * f
-            print('l: {:.2e}'.format(l))
-            print('k: {:.2e}'.format(k))
+            print('k: {:.2e}'.format(l))
+            print('l: {:.2e}'.format(k))
             print('w: {:.2e}'.format(w))
-        elif op == 2:
+        elif op == 2:  # teste correto
             l = float(input('Informe o valor de l: '))
-            f = c / l
             k = 2 * pi / l
+            f = c / k
             w = 2 * pi * f
             print('f: {:.2e}'.format(f))
             print('k: {:.2e}'.format(k))
             print('w: {:.2e}'.format(w))
-        elif op == 3:
+        elif op == 3: #Teste correto
             k = float(input('Informe o valor de k: '))
             l = 2 * pi / k
-            f = c / l
+            f = c / k
             w = 2 * pi * f
             print('f: {:.2e}'.format(f))
             print('l: {:.2e}'.format(l))
             print('w: {:.2e}'.format(w))
-        elif op == 4:
+        elif op == 4:    #teste correto
             w = float(input('Informe o valor de w: '))
             f = w / (2 * pi)
             l = c / f
             k = 2 * pi / l
             print('f: {:.2e}'.format(f))
-            print('l: {:.2e}'.format(l))
-            print('k: {:.2e}'.format(k))
+            print('k: {:.2e}'.format(l))
+            print('l: {:.2e}'.format(k))
             
 # Programa principal
 menu()
