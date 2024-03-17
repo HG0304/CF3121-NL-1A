@@ -1,6 +1,6 @@
 print('Hugo Emilio Nomura - 22.123.051-9')
 print('Paulo Hudson - 22.222.013-9')
-print('Pedro Satoru Takashi - ')                # adicionar RA
+print('Pedro Satoru Takashi - 22.123.019-6')                
 print('Vitor Monteiro Vianna - 22.223.085-6')
 
 # Descrição breve do trabalho
